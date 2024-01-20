@@ -46,7 +46,7 @@ public class Pizza {
             }
             else{
                 price += 120;
-                bill += "\n Extra Toppings For Non-veg Pizza = 120";
+                bill += "\n Extra Toppings Added = 120";
             }
             this.extraToppingsAdded = true;
         }
@@ -57,13 +57,13 @@ public class Pizza {
         if(!takeAway){
             takeAway = true;
             price += 20;
-            bill += "\n Paper bag Price = 20";
+            bill += "\n Paper Added = 20";
         }
     }
 
     public String getBill(){
         if(!billed){
-            bill += "\n Total Price: " + price;
+            bill += "\n Total Price: " + price + "\n";
             this.billed = true;
         }
         return this.bill;
