@@ -32,7 +32,7 @@ public class Pizza {
         // your code goes here
         if(!extraCheeseAdded){
             price += 80;
-            bill += "\n Extra Cheese Added: 80";
+            bill += "\nExtra Cheese Added: 80";
             this.extraCheeseAdded=true;
         }
 
@@ -42,11 +42,11 @@ public class Pizza {
         if(!extraToppingsAdded){
             if(isVeg){
                 price += 70;
-                bill += "\n Extra Toppings Added: 70";
+                bill += "\nExtra Toppings Added: 70";
             }
             else{
                 price += 120;
-                bill += "\n Extra Toppings Added = 120";
+                bill += "\nExtra Toppings Added: 120";
             }
             this.extraToppingsAdded = true;
         }
@@ -57,13 +57,13 @@ public class Pizza {
         if(!takeAway){
             takeAway = true;
             price += 20;
-            bill += "\n Paper Added = 20";
+            bill += "\nPaperbag Added: 20";
         }
     }
 
     public String getBill(){
         if(!billed){
-            bill += "\n Total Price: " + price + "\n";
+            bill += "\nTotal Price: " + price + "\n";
             this.billed = true;
         }
         return this.bill;
